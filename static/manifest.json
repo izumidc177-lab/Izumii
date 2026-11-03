@@ -9,5 +9,17 @@
   "start_url": "/",
   "theme_color": "#8b5cf6",
   "id": "yuzuru-enhance",
-  "description": "Yuzuru Enhance - Tingkatkan kualitas foto dan video dengan tampilan modern, simple, cepat, dan praktis."
+  "description": "Yuzuru Enhance - Tingkatkan kualitas foto dan video dengan tampilan modern.",
+  "icons": [
+    {
+      "src": "/static/yuzuru-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/yuzuru-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
