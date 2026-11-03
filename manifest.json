@@ -1,0 +1,13 @@
+{
+  "background_color": "#0b0b12",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Yuzuru Enchance",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Yuzuru",
+  "start_url": "/",
+  "theme_color": "#8b5cf6",
+  "id": "yuzuru-enhance",
+  "description": "Yuzuru Enhance — Tingkatkan kualitas foto dan video dengan tampilan modern. Simple, cepat, dan praktis."
+}
