@@ -1,34 +1,156 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="UTF-8"><link rel="manifest" href="/static/manifest.json">
-<meta name="theme-color" content="#8b5cf6"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nova Enhance — AI Media Studio</title>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b14">
+<link rel="manifest" href="/static/manifest.json">
+<title>Yuzuru Enhance — AI Media Studio</title>
 <style>
-:root{--bg:#080b13;--panel:#111827;--panel2:#151f31;--line:#25334a;--muted:#91a0b8;--text:#edf3ff;--a:#8b7cff;--b:#35d6c2}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% -10%,#25205a 0,transparent 38%),radial-gradient(ellipse at 100% 10%,#103b43 0,transparent 28%),var(--bg);color:var(--text);font:15px Inter,system-ui,Segoe UI,sans-serif;min-height:100vh}
-.wrap{max-width:1120px;margin:auto;padding:28px 22px 60px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:42px}.brand{display:flex;gap:12px;align-items:center;font-weight:800;font-size:20px;letter-spacing:.2px}.logo{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;color:#07111b;font-size:22px}.pill{border:1px solid #34435d;color:#b9c5da;border-radius:99px;padding:8px 13px;font-size:12px}
-.hero{text-align:center;margin-bottom:30px}.eyebrow{color:#a99fff;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:800}.hero h1{font-size:clamp(32px,6vw,56px);line-height:1.04;margin:14px 0;background:linear-gradient(90deg,#fff,#bdb5ff 55%,#83f0dd);-webkit-background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:650px;margin:0 auto;line-height:1.7}
-.layout{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.panel{background:linear-gradient(160deg,rgba(21,31,49,.96),rgba(13,19,31,.96));border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 20px 60px #0004}.panel h2{font-size:17px;margin:0 0 5px}.sub{color:var(--muted);font-size:13px;margin:0 0 20px}.drop{border:1.5px dashed #485777;border-radius:17px;min-height:220px;display:grid;place-items:center;text-align:center;padding:24px;background:#0c1422;cursor:pointer;transition:.2s}.drop:hover,.drop.over{border-color:var(--b);background:#10202b}.upicon{width:52px;height:52px;border-radius:16px;background:#25244c;display:grid;place-items:center;font-size:24px;margin:0 auto 12px}.drop strong{display:block;margin-bottom:6px}.drop small{color:var(--muted)}input[type=file]{display:none}.preview{max-width:100%;max-height:220px;border-radius:12px;margin-top:14px;display:none}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}.field label{display:block;font-size:12px;color:#aebbd0;margin-bottom:8px}.field select{width:100%;background:#0b1320;color:var(--text);border:1px solid #33435e;border-radius:11px;padding:12px;font:inherit;outline:none}.switchrow{display:flex;justify-content:space-between;align-items:center;margin-top:17px;padding:13px;border:1px solid var(--line);border-radius:12px}.switchrow small{display:block;color:var(--muted);margin-top:3px}.switch{accent-color:#9b8cff;width:18px;height:18px}.btn{width:100%;margin-top:18px;padding:14px;border:0;border-radius:13px;background:linear-gradient(100deg,#8b7cff,#44d9c6);color:#07111a;font-weight:800;font-size:15px;cursor:pointer}.btn:disabled{opacity:.45;cursor:not-allowed}.status{margin-top:14px;color:var(--muted);font-size:13px;line-height:1.6;min-height:20px}.bar{height:7px;border-radius:20px;background:#26334a;overflow:hidden;margin-top:10px;display:none}.bar span{height:100%;display:block;width:0;background:linear-gradient(90deg,var(--a),var(--b));transition:width .3s}.download{display:none;color:#9df2df;font-weight:700;text-decoration:none;margin-top:14px}.sidegrid{display:grid;gap:12px}.stat{padding:15px;border:1px solid var(--line);border-radius:14px;background:#0c1421}.stat b{display:block;font-size:21px;margin-bottom:4px}.stat span{font-size:12px;color:var(--muted)}.note{font-size:12px;color:#9ba9bf;line-height:1.65;margin-top:17px}.note strong{color:#d9e2f2}.footer{text-align:center;color:#66758e;font-size:11px;margin-top:28px}
-@media(max-width:780px){.layout{grid-template-columns:1fr}.top{margin-bottom:30px}.fields{grid-template-columns:1fr 1fr}.panel{padding:17px}}@media(max-width:420px){.fields{grid-template-columns:1fr}.pill{display:none}}
-</style></head>
-<body><div class="wrap">
-<header class="top"><div class="brand"><div class="logo">✦</div> NOVA <span style="color:#9c91ff">ENHANCE</span></div><div class="pill">MEDIA AI STUDIO · BETA</div></header>
-<section class="hero"><div class="eyebrow">Next-generation media toolkit</div><h1>Make every pixel<br>look its best.</h1><p>Tingkatkan resolusi foto dan video, serta atur frame rate dalam satu studio. Unggah media, pilih kualitas tujuan, lalu proses.</p></section>
+:root{--bg:#080a12;--panel:rgba(18,23,40,.82);--panel2:#11182a;--line:rgba(157,169,218,.16);--muted:#929db8;--text:#f3f5ff;--purple:#9b83ff;--cyan:#54e6d2;--pink:#ec8bff}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);font:15px Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(ellipse at 12% 0%,#30245d80,transparent 34%),radial-gradient(ellipse at 95% 14%,#07554b55,transparent 29%),linear-gradient(145deg,#080a12,#0c1020 55%,#080b13);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 80%)}
+.wrap{position:relative;max-width:1160px;margin:auto;padding:25px 22px 55px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:54px}.brand{display:flex;align-items:center;gap:11px;font-size:19px;font-weight:850;letter-spacing:.5px}.logo{width:43px;height:43px;border-radius:15px;display:grid;place-items:center;font-size:23px;color:#080b16;background:linear-gradient(135deg,var(--purple),var(--cyan));box-shadow:0 8px 30px #8b7cff55}.brand span{color:#b7a9ff}.live{display:flex;align-items:center;gap:8px;border:1px solid var(--line);padding:9px 13px;border-radius:99px;color:#c2cce0;font-size:11px;letter-spacing:1px;background:#ffffff08}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+.hero{text-align:center;margin-bottom:34px}.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#b9aaff;font-weight:800}.hero h1{font-size:clamp(36px,7vw,64px);line-height:1.02;letter-spacing:-2px;margin:15px 0;background:linear-gradient(100deg,#fff 15%,#c2b6ff 55%,#8ff5e5);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:630px;margin:0 auto;color:var(--muted);line-height:1.75;font-size:14px}
+.chips{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:21px}.chip{font-size:11px;color:#cbd4e9;border:1px solid var(--line);border-radius:99px;padding:7px 11px;background:#ffffff06}
+.layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:18px;align-items:start}.panel{background:linear-gradient(145deg,rgba(24,30,51,.91),rgba(12,17,30,.94));border:1px solid var(--line);border-radius:23px;padding:22px;box-shadow:0 22px 70px #0005;backdrop-filter:blur(16px)}.heading{display:flex;justify-content:space-between;align-items:center;gap:10px}.panel h2{font-size:17px;margin:0}.step{font-size:10px;color:#b7a9ff;border:1px solid #9b83ff55;border-radius:99px;padding:6px 9px}.sub{font-size:12px;color:var(--muted);margin:7px 0 18px}
+.drop{display:grid;place-items:center;text-align:center;min-height:205px;padding:22px;border:1px dashed #68749c80;border-radius:18px;background:linear-gradient(140deg,#11182a,#0b1220);cursor:pointer;transition:.25s;position:relative;overflow:hidden}.drop:hover,.drop.over{border-color:var(--cyan);box-shadow:inset 0 0 35px #54e6d211}.upload-icon{width:53px;height:53px;margin:0 auto 12px;display:grid;place-items:center;border-radius:17px;font-size:24px;color:#d7d0ff;background:linear-gradient(135deg,#8b7cff33,#54e6d222);border:1px solid #9b83ff55}.drop strong{display:block;font-size:14px;margin-bottom:7px}.drop small{color:var(--muted);font-size:11px}input[type=file]{display:none}.preview{display:none;max-width:100%;max-height:170px;margin:14px auto 0;border-radius:12px;object-fit:contain}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:19px}.field label{display:block;color:#aeb9d1;font-size:10px;letter-spacing:1px;margin-bottom:8px}.field select{width:100%;padding:12px 11px;border:1px solid var(--line);border-radius:11px;background:#0a1020;color:var(--text);font:inherit;font-size:13px;outline:none}.field select:focus{border-color:var(--purple)}
+.switchrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:15px;padding:13px;border:1px solid var(--line);border-radius:13px;background:#ffffff04}.switchrow b{font-size:12px}.switchrow small{display:block;color:var(--muted);font-size:11px;margin-top:4px;line-height:1.5}.switch{width:18px;height:18px;accent-color:var(--purple)}
+.btn{width:100%;padding:14px;border:0;border-radius:13px;margin-top:17px;background:linear-gradient(100deg,#9b83ff,#54e6d2);color:#071018;font-weight:850;font-size:14px;cursor:pointer;box-shadow:0 10px 28px #8b7cff30;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.07)}.btn:disabled{opacity:.48;cursor:not-allowed;transform:none}
+.status{margin-top:13px;min-height:20px;color:#aab5cc;font-size:12px;line-height:1.6}.progress{height:6px;background:#283047;border-radius:99px;overflow:hidden;margin-top:9px;display:none}.progress span{display:block;width:40%;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--purple),var(--cyan));animation:travel 1.35s ease-in-out infinite alternate}@keyframes travel{from{transform:translateX(-75%)}to{transform:translateX(220%)}}
+.result{display:none;margin-top:19px;padding-top:18px;border-top:1px solid var(--line)}.result-title{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:11px}.result-title b{font-size:13px}.method{font-size:10px;color:#9ce9dc}.compare{--split:50%;height:260px;position:relative;overflow:hidden;border-radius:15px;background:#090d17;border:1px solid var(--line);user-select:none}.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.compare .after-wrap{position:absolute;inset:0 auto 0 0;width:var(--split);overflow:hidden;border-right:2px solid #fff;box-shadow:5px 0 18px #0008}.compare .after-wrap img{width: min( calc( (100vw - 88px) * 1.3 ), 700px );max-width:none;left:0;object-fit:contain}.compare-label{position:absolute;top:10px;z-index:2;padding:6px 9px;border-radius:8px;background:#070b16c9;font-size:10px;font-weight:800;letter-spacing:1px}.compare-label.before{right:10px}.compare-label.after{left:10px}.slider{width:100%;margin:13px 0 0;accent-color:var(--cyan)}.download{display:block;text-align:center;text-decoration:none;margin-top:13px;padding:13px;border-radius:12px;color:#071018;background:linear-gradient(100deg,#54e6d2,#a3f4df);font-weight:850;font-size:13px}
+.side{display:grid;gap:13px}.stat{padding:16px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(140deg,#ffffff08,#ffffff02)}.stat-top{display:flex;justify-content:space-between;align-items:center;color:#aeb9d1;font-size:11px}.stat strong{display:block;font-size:22px;margin:8px 0 3px;letter-spacing:-.5px}.stat small{font-size:11px;color:var(--muted)}.stat-icon{color:var(--cyan);font-size:17px}.info{font-size:11px;line-height:1.75;color:#9ba8c1;padding:15px;border:1px solid var(--line);border-radius:15px;background:#ffffff04}.info b{color:#e3e9f7}.footer{text-align:center;color:#69758d;font-size:10px;letter-spacing:1px;margin-top:28px}
+@media(max-width:780px){.layout{grid-template-columns:1fr}.top{margin-bottom:38px}.side{grid-template-columns:repeat(2,minmax(0,1fr))}.side .info{grid-column:1/-1}}
+@media(max-width:480px){.wrap{padding:19px 14px 40px}.top{margin-bottom:34px}.brand{font-size:16px}.live{font-size:9px;padding:8px}.panel{padding:16px;border-radius:19px}.fields{gap:10px}.field select{font-size:12px}.side{grid-template-columns:1fr 1fr}.compare{height:220px}.hero h1{letter-spacing:-1.5px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><div class="logo">✦</div> YUZURU <span>ENHANCE</span></div><div class="live"><i class="dot"></i> MEDIA STUDIO</div></header>
+<section class="hero"><div class="eyebrow">✦ next-generation media toolkit</div><h1>Bring every detail<br>to life.</h1><p>Tingkatkan kualitas foto dan video dengan workflow sederhana. Pilih file, atur output, lalu lihat hasilnya dalam satu studio.</p><div class="chips"><span class="chip">✧ Photo enhancement</span><span class="chip">◈ Video processing</span><span class="chip">⌁ Up to 2K output</span></div></section>
 <div class="layout">
-<section class="panel"><h2>Unggah media</h2><p class="sub">Pilih satu foto atau video dari perangkatmu.</p>
-<label class="drop" id="drop"><input id="file" type="file" accept="image/jpeg,image/png,image/webp,video/mp4,video/quicktime,video/x-matroska,video/webm"><div><div class="upicon">↑</div><strong id="dropTitle">Tarik file ke sini atau klik untuk memilih</strong><small>JPG, PNG, WEBP, MP4, MOV, MKV · satu file</small><img id="preview" class="preview"></div></label>
-<div class="fields"><div class="field"><label>JENIS MEDIA</label><select id="kind"><option value="photo">Foto</option><option value="video">Video</option></select></div><div class="field"><label>RESOLUSI OUTPUT</label><select id="resolution"><option>180p</option><option>240p</option><option>360p</option><option>480p</option><option>720p</option><option>1080p</option><option selected>1440p</option><option value="2k">2K · 2560 px</option></select></div><div class="field" id="fpsField"><label>FRAME RATE OUTPUT</label><select id="fps"><option>24</option><option>30</option><option selected>60</option><option>120</option><option>144</option><option>240</option></select></div><div class="field"><label>MODE PEMROSESAN</label><select id="mode"><option value="balanced">Seimbang</option><option value="quality">Prioritas kualitas</option></select></div></div>
-<div class="switchrow"><div><b style="font-size:13px">AI photo enhancement</b><small>Gunakan Real-ESRGAN jika terpasang di server</small></div><input class="switch" type="checkbox" id="ai" checked></div>
-<button class="btn" id="go" disabled>✦ &nbsp; Mulai enhancement</button><div class="status" id="status">Pilih file untuk memulai.</div><div class="bar" id="bar"><span id="fill"></span></div><a class="download" id="download" href="#">↓ &nbsp; Download hasil</a>
+<section class="panel">
+<div class="heading"><h2>Unggah media</h2><span class="step">01 / INPUT</span></div><p class="sub">Pilih satu foto atau video dari perangkatmu.</p>
+<label class="drop" id="drop"><input id="file" type="file" accept="image/jpeg,image/png,image/webp,video/mp4,video/quicktime,video/x-matroska,video/webm"><div><div class="upload-icon">↑</div><strong id="dropTitle">Pilih file untuk mulai</strong><small>JPG · PNG · WEBP · MP4 · MOV · MKV · WEBM</small><img id="preview" class="preview" alt="Preview file"></div></label>
+<div class="fields">
+<div class="field"><label>JENIS MEDIA</label><select id="kind"><option value="photo">Foto</option><option value="video">Video</option></select></div>
+<div class="field"><label>RESOLUSI OUTPUT</label><select id="resolution"><option>180p</option><option>240p</option><option>360p</option><option>480p</option><option>720p</option><option>1080p</option><option selected>1440p</option><option value="2k">2K · 2560 px</option></select></div>
+<div class="field" id="fpsField"><label>FRAME RATE OUTPUT</label><select id="fps"><option>24</option><option>30</option><option selected>60</option><option>120</option><option>144</option><option>240</option></select></div>
+<div class="field"><label>MODE PEMROSESAN</label><select id="mode"><option value="balanced">Seimbang</option><option value="quality">Prioritas kualitas</option></select></div>
+</div>
+<div class="switchrow"><div><b>AI photo enhancement</b><small>Real-ESRGAN digunakan hanya jika tersedia di server.</small></div><input class="switch" type="checkbox" id="ai" checked></div>
+<button class="btn" id="go" disabled>✦ &nbsp; Mulai enhancement</button>
+<div class="status" id="status">Pilih file untuk memulai.</div><div class="progress" id="progress"><span></span></div>
+<section class="result" id="result">
+<div class="result-title"><b>Perbandingan hasil</b><span class="method" id="method"></span></div>
+<div class="compare" id="compare"><span class="compare-label after">HASIL</span><span class="compare-label before">ASLI</span><img id="originalImg" alt="Foto asli"><div class="after-wrap" id="afterWrap"><img id="resultImg" alt="Foto hasil enhancement"></div></div>
+<input class="slider" id="compareSlider" type="range" min="0" max="100" value="50" aria-label="Geser untuk membandingkan foto asli dan hasil">
+<a class="download" id="download" href="#">↓ &nbsp; DOWNLOAD RESULT</a>
 </section>
-<aside class="panel"><h2>Studio capabilities</h2><p class="sub">Pengaturan output yang tersedia</p><div class="sidegrid">
-<div class="stat"><b>180p — 2K</b><span>Rentang resolusi output</span></div><div class="stat"><b>24 — 240 FPS</b><span>Pilihan frame rate video</span></div><div class="stat"><b>Photo + Video</b><span>Dua jenis media dalam satu workflow</span></div></div>
-<div class="note"><strong>Catatan kualitas</strong><br>Upscaling tidak dapat menjamin detail asli yang tidak ada pada file sumber. Output 120/240 FPS dibuat melalui konversi frame FFmpeg pada versi starter ini, bukan AI motion interpolation. Foto memakai Real-ESRGAN hanya jika binary dan modelnya sudah dipasang; jika tidak, sistem memakai Lanczos sebagai fallback.</div>
-<div class="note"><strong>Privasi</strong><br>File diproses pada server yang kamu jalankan. Hapus folder <code>jobs</code> secara berkala setelah mengunduh hasil.</div>
-</aside></div><div class="footer">NOVA ENHANCE · SELF-HOSTED STARTER · © 2026</div></div>
+</section>
+<aside class="side">
+<div class="stat"><div class="stat-top">RESOLUSI OUTPUT <span class="stat-icon">◇</span></div><strong>180p — 2K</strong><small>Pilihan ukuran hasil</small></div>
+<div class="stat"><div class="stat-top">VIDEO FRAME RATE <span class="stat-icon">⌁</span></div><strong>24 — 240</strong><small>FPS output yang tersedia</small></div>
+<div class="stat"><div class="stat-top">SUPPORTED MEDIA <span class="stat-icon">▧</span></div><strong>Photo + Video</strong><small>Dua jenis media dalam satu workflow</small></div>
+<div class="info"><b>Catatan kualitas</b><br>Jika Real-ESRGAN belum terpasang, foto diproses menggunakan Lanczos. Konversi FPS video memakai FFmpeg, bukan AI motion interpolation. Animasi pemindaian menunjukkan proses sedang berjalan, bukan persentase progres asli.</div>
+<div class="info"><b>Privasi</b><br>File diproses pada server. Simpan hasil yang diperlukan dan hapus folder <code>jobs</code> secara berkala.</div>
+</aside>
+</div>
+<div class="footer">YUZURU ENHANCE · MEDIA WORKSPACE · 2026</div>
+</div>
 <script>
-const file=document.getElementById('file'),drop=document.getElementById('drop'),go=document.getElementById('go'),kind=document.getElementById('kind'),preview=document.getElementById('preview'),statusEl=document.getElementById('status'),bar=document.getElementById('bar'),fill=document.getElementById('fill'),download=document.getElementById('download');
-function setFile(f){if(!f)return;file._chosen=f;document.getElementById('dropTitle').textContent=f.name;go.disabled=false;preview.style.display='none';if(f.type.startsWith('image/')){preview.src=URL.createObjectURL(f);preview.style.display='block'}kind.value=f.type.startsWith('video/')?'video':'photo';toggleFps();statusEl.textContent='File siap. Atur output lalu mulai proses.';download.style.display='none'}
-drop.addEventListener('click',()=>file.click());file.addEventListener('change',()=>setFile(file.files[0]));drop.addEventListener('dragover',e=>{e.preventDefault();drop.classList.add('over')});drop.addEventListener('dragleave',()=>drop.classList.remove('over'));drop.addEventListener('drop',e=>{e.preventDefault();drop.classList.remove('over');setFile(e.dataTransfer.files[0])});
-function toggleFps(){document.getElementById('fpsField').style.opacity=kind.value==='video'?'1':'.45'}kind.addEventListener('change',toggleFps);toggleFps();
-go.addEventListener('click',async()=>{const f=file._chosen;if(!f)return;go.disabled=true;download.style.display='none';bar.style.display='block';fill.style.width='12%';statusEl.textContent='Mengunggah file ke server…';const fd=new FormData();fd.append('file',f);fd.append('kind',kind.value);fd.append('resolution',document.getElementById('resolution').value);fd.append('fps',document.getElementById('fps').value);fd.append('ai_mode',document.getElementById('ai').checked?'true':'false');try{fill.style.width='38%';const r=await fetch('/api/enhance',{method:'POST',body:fd});const data=await r.json();if(!r.ok)throw new Error(data.detail||'Proses gagal');fill.style.width='100%';statusEl.textContent='Selesai · '+data.method;download.href=data.download_url;download.style.display='inline-block'}catch(e){statusEl.textContent='Error: '+e.message;fill.style.width='0%'}finally{go.disabled=false}});
-</script></body></html>
+const file=document.getElementById('file');
+const drop=document.getElementById('drop');
+const go=document.getElementById('go');
+const kind=document.getElementById('kind');
+const preview=document.getElementById('preview');
+const statusEl=document.getElementById('status');
+const progress=document.getElementById('progress');
+const result=document.getElementById('result');
+const download=document.getElementById('download');
+const compare=document.getElementById('compare');
+const afterWrap=document.getElementById('afterWrap');
+const compareSlider=document.getElementById('compareSlider');
+let originalObjectUrl=null;
+
+function setCompare(value){
+  compare.style.setProperty('--split',value+'%');
+  afterWrap.style.width=value+'%';
+  const resultImg=document.getElementById('resultImg');
+  resultImg.style.width=compare.clientWidth+'px';
+}
+function toggleFps(){
+  document.getElementById('fpsField').style.opacity=kind.value==='video'?'1':'.45';
+}
+function setFile(f){
+  if(!f)return;
+  file._chosen=f;
+  document.getElementById('dropTitle').textContent=f.name;
+  go.disabled=false;
+  result.style.display='none';
+  if(originalObjectUrl)URL.revokeObjectURL(originalObjectUrl);
+  preview.style.display='none';
+  if(f.type.startsWith('image/')){
+    originalObjectUrl=URL.createObjectURL(f);
+    preview.src=originalObjectUrl;
+    preview.style.display='block';
+  }
+  kind.value=f.type.startsWith('video/')?'video':'photo';
+  toggleFps();
+  statusEl.textContent='File siap. Atur output lalu mulai proses.';
+}
+drop.addEventListener('click',()=>file.click());
+file.addEventListener('change',()=>setFile(file.files[0]));
+drop.addEventListener('dragover',e=>{e.preventDefault();drop.classList.add('over')});
+drop.addEventListener('dragleave',()=>drop.classList.remove('over'));
+drop.addEventListener('drop',e=>{e.preventDefault();drop.classList.remove('over');setFile(e.dataTransfer.files[0])});
+kind.addEventListener('change',toggleFps);
+compareSlider.addEventListener('input',()=>setCompare(compareSlider.value));
+window.addEventListener('resize',()=>setCompare(compareSlider.value));
+toggleFps();
+
+go.addEventListener('click',async()=>{
+  const chosen=file._chosen;
+  if(!chosen)return;
+  go.disabled=true;
+  result.style.display='none';
+  download.style.display='none';
+  progress.style.display='block';
+  statusEl.textContent='Mengunggah dan memproses file…';
+  const form=new FormData();
+  form.append('file',chosen);
+  form.append('kind',kind.value);
+  form.append('resolution',document.getElementById('resolution').value);
+  form.append('fps',document.getElementById('fps').value);
+  form.append('ai_mode',document.getElementById('ai').checked?'true':'false');
+  try{
+    const response=await fetch('/api/enhance',{method:'POST',body:form});
+    const data=await response.json();
+    if(!response.ok)throw new Error(data.detail||'Proses gagal');
+    statusEl.textContent='Selesai diproses · '+data.method;
+    download.href=data.download_url;
+    if(kind.value==='photo'){
+      document.getElementById('originalImg').src=data.original_url+'?t='+Date.now();
+      document.getElementById('resultImg').src=data.result_url+'?t='+Date.now();
+      document.getElementById('method').textContent=data.method;
+      result.style.display='block';
+      compareSlider.value=50;
+      requestAnimationFrame(()=>setCompare(50));
+    }else{
+      document.getElementById('method').textContent=data.method;
+      result.style.display='block';
+      compare.style.display='none';
+      compareSlider.style.display='none';
+    }
+    download.style.display='block';
+  }catch(error){
+    statusEl.textContent='Terjadi kesalahan: '+error.message;
+  }finally{
+    progress.style.display='none';
+    go.disabled=false;
+  }
+});
+</script>
+</body>
+</html>
